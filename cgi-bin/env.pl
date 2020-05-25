@@ -2,7 +2,7 @@
 # $Id: env.pl,v 1.5 2013/04/08 03:23:52 michelc Exp $
 
 if (! -e '/usr/local/share/perl5/cPanelUserConfig.pm') {
-  use lib '/home/iggy/GITrepo/site/lib';
+  use lib $ENV{SITE}.'/lib';
 }  else {
   use cPanelUserConfig;
   binmode(STDOUT);
